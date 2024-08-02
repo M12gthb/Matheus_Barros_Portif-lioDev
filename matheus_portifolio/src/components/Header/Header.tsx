@@ -6,7 +6,7 @@ import NavBar from "../NavBar";
 
 function Header() {
   return (
-    <header className="h-[15vh] bg-slate-950 blue flex flex-row px-[10%] items-center justify-between">
+    <header className="h-[15vh] bg-slate-950 blue flex flex-row px-[10%] items-center justify-between fixed w-[100%] z-50">
       <Link href={"https://github.com/M12gthb"}>
         <Image
           src={"/Icon2.png"}
@@ -16,9 +16,6 @@ function Header() {
           className="cursor-pointer"
         />
       </Link>
-      {/* <h1 className="inline-block text-gradient text-stroke ">
-          Matheus Barros
-        </h1> */}
       <NavBar />
     </header>
   );
