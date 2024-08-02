@@ -4,8 +4,6 @@ import { ReposType } from "@/interfaces/Repositorys";
 import Image from "next/image";
 
 function ProjectCard({ repository }: { repository: ReposType }) {
-  const socialPreviewUrl = `https://opengraph.githubassets.com/1/${repository.owner.login}/${repository.name}`;
-
   return (
     <>
       {repository.homepage && (
@@ -13,7 +11,7 @@ function ProjectCard({ repository }: { repository: ReposType }) {
           <Image
             width={200}
             height={150}
-            src={socialPreviewUrl}
+            src="projects.jpg"
             alt={`${repository.name} social preview`}
             className="social-preview w-full rounded-sm"
           />
