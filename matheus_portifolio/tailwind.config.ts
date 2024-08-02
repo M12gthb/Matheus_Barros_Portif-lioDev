@@ -16,6 +16,7 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        md: "768px",
       },
     },
     extend: {
@@ -55,9 +56,9 @@ const config = {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "2px",
+        md: "4px",
+        sm: "6px",
       },
       keyframes: {
         "accordion-down": {
@@ -76,15 +77,27 @@ const config = {
           from: { transform: "translateX(100%)", opacity: "0" },
           to: { transform: "translateX(0)", opacity: "1" },
         },
+        "slide-left-rigth": {
+          from: { transform: "translateX(-100%)", opacity: "0" },
+          to: { transform: "translateX(0)", opacity: "1" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-5px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "slide-down": "slide-down 0.5s ease-out",
         "slide-right-left": "slide-right-left 0.5s ease-out",
+        "slide-left-rigth": "slide-left-rigth 0.5s ease-out",
+        float: "float 4s linear infinite",
       },
       boxShadow: {
         blue: "0 4px 6px -1px rgba(0, 0, 255, 0.1), 0 2px 4px -1px rgba(0, 0, 255, 0.06)",
+        float:
+          "0 8px 10px -2px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2)",
       },
     },
   },
@@ -100,6 +113,9 @@ const config = {
         },
         ".text-stroke": {
           "-webkit-text-stroke": "3px transparent",
+        },
+        ".image-shadow": {
+          filter: "drop-shadow(1px 1px 1px white)",
         },
       });
     },
