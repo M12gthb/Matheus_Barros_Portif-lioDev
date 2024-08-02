@@ -35,7 +35,7 @@ function Projects() {
       className="w-full flex flex-col items-center justify-center px-1 gap-3"
     >
       <h1 className="text-3xl text-gray-300 font-bold">Projects</h1>
-      <p className="text-xl text-gray-400">Recent projects developed:</p>
+      <p className="text-base text-gray-400">Recent projects developed:</p>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-3">
         {repositories.map((repository) => (
           <ProjectCard key={repository.id} repository={repository} />
