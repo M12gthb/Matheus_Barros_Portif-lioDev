@@ -111,6 +111,11 @@ const config = {
           "-webkit-background-clip": "text",
           color: "#020617",
         },
+        ".font-gradient": {
+          background: "linear-gradient(60deg,#00a8ff,#be2edd)",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+        },
         ".text-stroke": {
           "-webkit-text-stroke": "3px transparent",
         },
