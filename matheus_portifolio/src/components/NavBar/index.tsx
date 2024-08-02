@@ -55,7 +55,10 @@ const NavBar = () => {
           Projects
           <GoProjectSymlink />
         </button>
-        <button className="text-cyan-200 hover:inline-block hover:text-stroke flex flex-row gap-2 items-center">
+        <button
+          className="text-cyan-200 hover:inline-block hover:text-stroke flex flex-row gap-2 items-center"
+          onClick={() => scrollToElement("contacts")}
+        >
           Contacts
           <RiContactsLine />
         </button>
