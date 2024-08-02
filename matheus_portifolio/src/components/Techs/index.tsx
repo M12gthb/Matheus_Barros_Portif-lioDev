@@ -6,7 +6,7 @@ function Techs() {
   return (
     <ul
       id="techs"
-      className="h-[120px]  md:h-[200px] md:pt-[120px] overflow-x-scroll md:overflow-x-hidden w-[100%] flex items-center gap-6"
+      className="h-[120px]  md:h-[200px] md:pt-[120px] overflow-x-scroll overflow-y-hidden md:overflow-x-hidden w-[100%] flex items-center gap-6"
     >
       {techsItens.map((element, index) => (
         <li
