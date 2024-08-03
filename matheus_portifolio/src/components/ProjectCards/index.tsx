@@ -1,20 +1,16 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { ReposType } from "@/interfaces/Repositorys";
-import Image from "next/image";
+import { FiGithub } from "react-icons/fi";
 
 function ProjectCard({ repository }: { repository: ReposType }) {
   return (
     <>
       {repository.homepage && (
         <li className="max-w-[280px] flex flex-col gap-4 rounded-sm border-2 border-black animate-slide-down ">
-          <Image
-            width={200}
-            height={150}
-            src="/projects.jpg"
-            alt={`${repository.name} social preview`}
-            className="social-preview w-full rounded-sm"
-          />
+          <div className="w-full h-[150px] rounded-sm bg-slate-800 flex items-center justify-center text-gray-400 hover:bg-black hover:text-white ">
+            <FiGithub className="w-[50px] h-[50px]" />
+          </div>
           <h1 className="text-white w-full px-2 h-[20px]">{repository.name}</h1>
           <div className="flex justify-between px-2">
             <a
