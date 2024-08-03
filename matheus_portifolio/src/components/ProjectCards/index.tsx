@@ -11,7 +11,7 @@ function ProjectCard({ repository }: { repository: ReposType }) {
           <Image
             width={200}
             height={150}
-            src="projects.jpg"
+            src="/projects.jpg"
             alt={`${repository.name} social preview`}
             className="social-preview w-full rounded-sm"
           />
