@@ -9,7 +9,7 @@ function About() {
     <>
       <section
         id="about"
-        className="w-full md:h-[65vh] italic text-3xl md:text-5xl flex flex-col md:items-center justify-center gap-5 p-2 md:pt-[200px] pt-[130px]"
+        className="w-full md:h-[65vh] italic text-3xl md:text-5xl flex flex-col md:items-center justify-center gap-5 p-2 md:pt-[200px] pt-[180px]"
       >
         <Avatar className="border-2 border-[#8a2dc9a3] w-[100px] h-[100px]">
           <AvatarImage src="/Avatar.jpg" />
