@@ -27,10 +27,10 @@ export const techsItens = [
     name: "React.js",
     href: "/React.svg",
   },
-  // {
-  //   name: "Next.js",
-  //   href: "/Next.png",
-  // },
+  {
+    name: "Next.js",
+    href: "/Next.svg",
+  },
   {
     name: "Node.js",
     href: "/Node.svg",
