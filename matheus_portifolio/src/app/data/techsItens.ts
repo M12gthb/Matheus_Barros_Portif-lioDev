@@ -36,10 +36,6 @@ export const techsItens = [
     href: "/Node.svg",
   },
   {
-    name: "express.js",
-    href: "/express.png",
-  },
-  {
     name: "Nest.js",
     href: "/Nest.svg",
   },
