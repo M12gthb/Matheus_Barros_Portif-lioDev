@@ -92,7 +92,10 @@ const NavBar = () => {
             Projects
             <GoProjectSymlink />
           </button>
-          <button className="text-cyan-200 hover:inline-block hover:text-stroke animate-slide-right-left flex flex-row gap-3 items-center justify-center">
+          <button
+            onClick={() => scrollToElement("contacts")}
+            className="text-cyan-200 hover:inline-block hover:text-stroke animate-slide-right-left flex flex-row gap-3 items-center justify-center"
+          >
             Contacts
             <RiContactsLine />
           </button>
