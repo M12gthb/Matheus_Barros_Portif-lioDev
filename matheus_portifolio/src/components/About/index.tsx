@@ -24,7 +24,7 @@ function About() {
         </h1>
         <div className="flex items-center gap-3">
           <a
-            href="/Matheus Barros Rodrigues Currículo - V5.pdf"
+            href="/Currículo - Matheus Barros Rodrigues.pdf"
             download="CV-Matheus-Barros.pdf"
             className="text-cyan-500 text-xs w-[140px] py-[10px] rounded-full border-4 border-violet-950 flex items-center justify-center"
           >
